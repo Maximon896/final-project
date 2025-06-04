@@ -21,10 +21,13 @@
 
     &-primary {
         background: var(--blue-color);
+        color: $white-color;
     }
 
     &-warning {
         background: var(--yellow-color);
+        border-color: var(--yellow-color);
+        color: $black-color;
     }
 
     &-transparent {
@@ -37,11 +40,15 @@
             color: var(--base-color);
         }
 
+        &-yellow {
+            color: var(--btn-transparent-yellow);
+            border-color: var(--btn-transparent-yellow);
+        }
+
         @include responsive(md, max) {
             flex: 1;
             font-size: 20px;
             min-height: 53px;
-
         }
     }
 }

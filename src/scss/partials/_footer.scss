@@ -31,12 +31,22 @@
 
     a {
       color: var(--yellow-color);
+
+      &:hover {
+        color: $white-color;
+      }
     }
   }
 
   &-address {
     font-size: 18px;
     line-height: 150%;
+  }
+
+  .contacts {
+    a, .icon {
+      color: $white-color;
+    }
   }
 }
 
@@ -52,6 +62,10 @@
   .logo {
     margin-bottom: 20px;
     text-align: center;
+
+    &-dark {
+      display: none;
+    }
 
     @include responsive(md) {
       margin-bottom: 44px;
@@ -91,6 +105,10 @@
 
         a {
           text-decoration: none;
+
+          &:hover {
+            color: var(--blue-color);
+          }
         }
       }
     }

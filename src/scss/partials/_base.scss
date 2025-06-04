@@ -4,10 +4,8 @@ body {
     background: var(--base-color);
     color: var(--text-color);
     font-size: 16px;
-
-    /*@include responsive(md) {
-        font-size: 16px;
-    }*/
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum";
 }
 
 .container {
@@ -141,7 +139,26 @@ img {
             }
         }
     }
+}
 
+.bg-blue {
+    > * {
+        color: $white-color;
+    }
+
+    .contacts {
+        a:hover {
+           &, .icon {
+               color: var(--yellow-color);
+           }
+        }
+    }
+}
+
+.bg-yellow {
+    > * {
+        color: $black-color;
+    }
 }
 
 ul {

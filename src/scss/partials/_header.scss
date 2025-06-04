@@ -62,8 +62,10 @@
 
         > ul {
             li {
-                a {
-
+                &:hover {
+                    > a {
+                        color: var(--blue-color);
+                    }
                 }
             }
         }

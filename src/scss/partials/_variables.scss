@@ -1,10 +1,11 @@
 :root {
-    --text-color: #333;
-    --base-color: #fff;
-    --blue-color: #1A7DF0;
-    --yellow-color: #FFE711;
-    --bs-btn-bg: #1A7DF0;
-    --highlight-text-color: #1A7DF0;
+  --text-color: #333;
+  --base-color: #fff;
+  --blue-color: #1A7DF0;
+  --yellow-color: #FFE711;
+  --bs-btn-bg: #1A7DF0;
+  --highlight-text-color: #1A7DF0;
+  --btn-transparent-yellow: #333;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,6 +13,7 @@
     --text-color: #fff;
     --base-color: #333;
     --highlight-text-color: #FFE711;
+    --btn-transparent-yellow: #FFE711;
   }
 }
 
@@ -27,3 +29,5 @@ $breakpoints: (
 
 $border-radius: 30px;
 $marginBottom: var(--bs-gutter-x);
+$white-color: #fff;
+$black-color: #333;

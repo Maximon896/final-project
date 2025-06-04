@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Асоціація «Джерело»</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="bubble bubble-yellow right-top"></div>
+<div class="bubble bubble-blue left-top"></div>
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <a href="#">
+                    <div class="logo-dark">
+                        <img src="images/logo.svg" alt="" />
+                    </div>
+                    <div class="logo-white">
+                        <img src="images/logo-white-theme.svg" alt="" />
+                    </div>
+                </a>
+            </div>
+            <div class="header-right">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox"/>
+                <label for="menu-toggle" class="menu-toggle">
+                    <span class="line"></span>
+                </label>
+                <div class="header-right-menu">
+                    <div class="row">
+                        <div class="col-md-2 col-lg-1 order-md-2 text-md-end">
+                            <div class="lang-switcher">
+                                <div class="lang-switcher-label">
+                                    ukr
+                                    <span class="icon">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M5.2998 10.2002L12.7998 17.7002L20.2998 10.2002" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+
+                                      </span>
+                                </div>
+                                <div class="dropdown-options">
+                                    <a href="#">English</a>
+                                    <a href="#">Deutsch</a>
+                                    <a href="#">Français</a>
+                                    <a href="#">Español</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-lg-11 order-md-1">
+                            <nav class="header-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Наші напрямки
+                                            <span class="icon">
+                                              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.2998 10.2002L12.7998 17.7002L20.2998 10.2002" stroke="currentColor"
+                                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Напрямок 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Напрямок 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Напрямок 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Наші партнери
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Звіти
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Новини
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Контакти
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="social-links">
+                                        <a href="#" class="icon">
+                                            <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.7002 22.8138L3.68331 18.2467C2.16612 16.093 1.48706 13.4596 1.77356 10.8408C2.06007 8.22197 3.29243 5.79772 5.23939 4.02299C7.18635 2.24827 9.71406 1.24507 12.3481 1.20166C14.9822 1.15826 17.5416 2.07763 19.546 3.78725C21.5504 5.49686 22.8619 7.87919 23.2346 10.4872C23.6072 13.0951 23.0153 15.7494 21.5699 17.9519C20.1245 20.1545 17.925 21.7538 15.3841 22.4498C12.8433 23.1458 10.1358 22.8906 7.76971 21.7321L1.7002 22.8138"
+                                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                                <path d="M8.91113 9.59287C8.91113 9.75225 8.97445 9.9051 9.08714 10.0178C9.19984 10.1305 9.3527 10.1938 9.51208 10.1938C9.67146 10.1938 9.82431 10.1305 9.93701 10.0178C10.0497 9.9051 10.113 9.75225 10.113 9.59287V8.39098C10.113 8.2316 10.0497 8.07875 9.93701 7.96605C9.82431 7.85335 9.67146 7.79004 9.51208 7.79004C9.3527 7.79004 9.19984 7.85335 9.08714 7.96605C8.97445 8.07875 8.91113 8.2316 8.91113 8.39098V9.59287ZM8.91113 9.59287C8.91113 11.1867 9.54427 12.7152 10.6713 13.8422C11.7982 14.9692 13.3268 15.6023 14.9206 15.6023H16.1224C16.2818 15.6023 16.4347 15.539 16.5474 15.4263C16.6601 15.3136 16.7234 15.1607 16.7234 15.0013C16.7234 14.842 16.6601 14.6891 16.5474 14.5764C16.4347 14.4637 16.2818 14.4004 16.1224 14.4004H14.9206C14.7612 14.4004 14.6083 14.4637 14.4956 14.5764C14.3829 14.6891 14.3196 14.842 14.3196 15.0013C14.3196 15.1607 14.3829 15.3136 14.4956 15.4263C14.6083 15.539 14.7612 15.6023 14.9206 15.6023"
+                                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <svg viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 9.6002V14.4002H5.1V22.8002H9.9V14.4002H13.5L14.7 9.6002H9.9V7.2002C9.9 6.88194 10.0264 6.57671 10.2515 6.35167C10.4765 6.12662 10.7817 6.0002 11.1 6.0002H14.7V1.2002H11.1C9.5087 1.2002 7.98258 1.83234 6.85736 2.95755C5.73214 4.08277 5.1 5.6089 5.1 7.2002V9.6002H1.5Z"
+                                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <path d="M17.6769 1.64697H7.32393C4.46505 1.64697 2.14746 3.96456 2.14746 6.82344V17.1764C2.14746 20.0353 4.46505 22.3529 7.32393 22.3529H17.6769C20.5358 22.3529 22.8533 20.0353 22.8533 17.1764V6.82344C22.8533 3.96456 20.5358 1.64697 17.6769 1.64697Z"
+                                                          stroke="currentColor" stroke-width="1.5"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4995 15.8824C14.6437 15.8824 16.3819 14.1442 16.3819 12C16.3819 9.85586 14.6437 8.11768 12.4995 8.11768C10.3554 8.11768 8.61719 9.85586 8.61719 12C8.61719 14.1442 10.3554 15.8824 12.4995 15.8824Z"
+                                                          stroke="currentColor" stroke-width="1.5"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M18.3232 6.17627V6.17727" stroke="currentColor"
+                                                          stroke-width="1.5" stroke-linecap="round"
+                                                          stroke-linejoin="round"/>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <svg viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.1002 8.5999L11.3002 13.3999L18.5002 20.5999L23.3002 1.3999L1.7002 9.7999L6.5002 12.1999L8.9002 19.3999L12.5002 14.5999"
+                                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                      stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="icon">
+                                            <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <path d="M18.6111 3H6.38889C3.68883 3 1.5 5.30254 1.5 8.14286V15.8571C1.5 18.6975 3.68883 21 6.38889 21H18.6111C21.3112 21 23.5 18.6975 23.5 15.8571V8.14286C23.5 5.30254 21.3112 3 18.6111 3Z"
+                                                          stroke="currentColor" stroke-width="1.5"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M10.5 8L16.5 12L10.5 16V8Z" stroke="currentColor"
+                                                          stroke-width="1.5" stroke-linecap="round"
+                                                          stroke-linejoin="round"/>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="contacts">
+                                        <a href="tel:+34641352251">
+                                            <div class="icon">
+                                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.1972 1.14307H9.30644L11.8611 7.52962L8.66779 9.44559C10.0357 12.2193 12.2806 14.4642 15.0543 15.8321L16.9703 12.6389L23.3569 15.1935V20.3027C23.3569 20.9803 23.0877 21.63 22.6086 22.1091C22.1295 22.5882 21.4798 22.8574 20.8022 22.8574C15.8198 22.5546 11.1204 20.4388 7.5908 16.9091C4.06117 13.3795 1.94536 8.68014 1.64258 3.69769C1.64258 3.02016 1.91172 2.37038 2.39081 1.8913C2.86989 1.41221 3.51967 1.14307 4.1972 1.14307"
+                                                          stroke="currentColor" stroke-width="1.5"
+                                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            +34 641 35 22 51
+                                        </a>
+                                        <a href="#">
+                                            <div class="icon">
+                                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.4998 22.8002C17.2998 17.7602 19.6998 12.9602 19.6998 8.4002C19.6998 4.42375 16.4763 1.2002 12.4998 1.2002C8.52335 1.2002 5.2998 4.42375 5.2998 8.4002C5.2998 12.9602 7.6998 17.7602 12.4998 22.8002Z"
+                                                          stroke="currentColor" stroke-width="1.5"
+                                                          stroke-linecap="square"/>
+                                                    <path d="M12.5004 13.2C14.4886 13.2 16.1004 11.5882 16.1004 9.6C16.1004 7.61177 14.4886 6 12.5004 6C10.5122 6 8.90039 7.61177 8.90039 9.6C8.90039 11.5882 10.5122 13.2 12.5004 13.2Z"
+                                                          stroke="currentColor" stroke-width="1.5"
+                                                          stroke-linecap="square"/>
+                                                </svg>
+                                            </div>
+                                            Carrer de Béjar, 38, Barcelona
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-banner text-center">
+            <h1>Українська Асоціація «Джерело»</h1>
+            <div class="header-banner-text">
+                <p>Розвиток та підтримка української діаспори в Каталонії, Іспанії з 2012 року </p>
+            </div>
+            <div class="header-buttons">
+                <a href="#" class="btn btn-lg btn-primary">Зв’язатись</a>
+                <a href="#" class="btn btn-lg btn-warning">Підтримати</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- Marquee block -->
+    <div class="marquee">
+        <div class="marquee__inner">
+        <span>
+          Допомагаємо 
+          <span class="flag flag-ua"></span>
+          Консультуємо
+          <span class="flag flag-ua"></span>
+          Розвиваємо
+          <span class="flag flag-ua"></span>
+          Iнтегруємо
+          <span class="flag flag-ua"></span>
+        </span>
+            <span>
+          Допомагаємо 
+          <span class="flag flag-ua"></span>
+          Консультуємо
+          <span class="flag flag-ua"></span>
+          Розвиваємо
+          <span class="flag flag-ua"></span>
+          Iнтегруємо
+          <span class="flag flag-ua"></span>
+        </span>
+            <span>
+          Допомагаємо 
+          <span class="flag flag-ua"></span>
+          Консультуємо
+          <span class="flag flag-ua"></span>
+          Розвиваємо
+          <span class="flag flag-ua"></span>
+          Iнтегруємо
+          <span class="flag flag-ua"></span>
+        </span>
+            <span>
+          Допомагаємо 
+          <span class="flag flag-ua"></span>
+          Консультуємо
+          <span class="flag flag-ua"></span>
+          Розвиваємо
+          <span class="flag flag-ua"></span>
+          Iнтегруємо
+          <span class="flag flag-ua"></span>
+        </span>
+        </div>
+    </div>
+    <!-- /Marquee block -->
+
+
+    <!-- About us -->
+    <section class="about-us">
+        <div class="bubble bubble-yellow-full left-center"></div>
+        <div class="bubble bubble-blue-full right-bottom"></div>
+        <div class="container">
+            <h2 class="about-us-title text-center"> Хто ми та що робимо</h2>
+            <div class="about-us-block">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="our-goal">
+                            <span class="another-color">Наша мета:</span>
+                            сформувати позитивний імідж України як
+                            сучасної та привабливої європейської країни.
+                        </h3>
+                        <h3 class="our-mission">
+                            <span class="another-color">Наша місія:</span>
+                            розвиток української діаспори в Іспанії
+                            задля зміцнення міжнародних зв'язків України та Іспанії.
+                        </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-our-work">
+                            <p>
+                                Ольга Дзюбан заснувала Асоціацію «Джерело» у 2012 році
+                                задля допомоги українцям.
+                            </p>
+                            <p>
+                                Українці, які опиняються в Іспанії та хочуть залишитись
+                                у цій країні, інтегруватись, мають великі потреби у
+                                юридичних консультаціях, психологічній підтримці, спілкуванні, теплій дружній атмосфері.
+                                Все це дає землякам «Джерело».
+                            </p>
+                            <p>
+                                Друга по значенню ціль — показати культуру України,
+                                ділитись традиціями, створювати освітні та культурні
+                                проєкти, які роблять життя людей насиченим, цікавим та щасливим.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us-block">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bg-block bg-blue">
+                            <h2 class="h2">
+                                Основними цілями діяльності Асоціації є:
+                            </h2>
+                            <ul>
+                                <li>Розвиток українських освітніх, культурних, соціальних та екологічних проєктів
+                                <li>Організація заходів, спрямованих на обмін та взаємозбагачення українців з
+                                    представниками інших культур
+                                </li>
+                                <li>Збереження українських культурних традицій</li>
+                                <li>Соціальна адаптація українців в Іспанії</li>
+                                <li>Промоція українських виробників та представників креативних індустрій</li>
+                                <li>Розвиток інституту волонтерства в Каталонії</li>
+                                <li>Збір гуманітарної допомоги для України та допомога українським біженцям. (з початку
+                                    війни в Україні робота у цьому напрямку стала інтенсивнішою)
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="img-wrap">
+                                    <img src="images/goal1.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="img-wrap">
+                                    <img src="images/goal2.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="images/goal3.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us-block our-nums">
+                <h2 class="text-center our-nums-title">Асоціація «Джерело» у цифрах</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="about-our-work">
+                            <p>
+                                Станом на 01.09.2022 Гуманітарним Центром Асоціації
+                                надано допомогу понад 1 тисячі українських сімей,
+                                які тимчасово переміщені в Іспанію внаслідок війни в
+                                Україні. Також Центром видано 1593 продуктових наборів. Асоціацією організовані курси
+                                іспанської мови, які регулярно відвідує 70 українських біженців.
+                                З жовтня заплановано відкриття курсів з вивчення іспанської мови для абітурієнтів, що
+                                вступатимуть до іспанських вишів.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="about-our-work-text">
+                            Щодня послугами Гуманітарного центру Асоціації користуються всередньому 50 сімей
+                        </h3>
+                    </div>
+                </div>
+                <div class="our-nums-items">
+                    <div class="row">
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    10 років
+                                </h2>
+                                <p>
+                                    активної роботи в Іспанії
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    70+
+                                </h2>
+                                <p>
+                                    культурних подій
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    понад 150 тонн
+                                </h2>
+                                <p>
+                                    зібраної гуманітарної допомоги для України
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    40 000€
+                                </h2>
+                                <p>
+                                    перераховано для допомоги Україні (ЗСУ, цивільне населення)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    Понад 100
+                                </h2>
+                                <p>
+                                    волонтерів залучили до допомоги
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    3 освітніх проєкти
+                                </h2>
+                                <p>
+                                    заснували у Барселоні
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    понад 2500
+                                </h2>
+                                <p>
+                                    продуктових наборів
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    майже 100
+                                </h2>
+                                <p>
+                                    людей відвідує курси
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="our-nums-item">
+                                <h2>
+                                    25 осіб
+                                </h2>
+                                <p>
+                                    навчаються на курсах для абітурієнтів
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-plans">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="video">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/EiOITSXe_X4?si=xvoitNd5hFLj7unA"
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>
+                                Про наші плани на майбутнє розповідає засновниця Асоціації Ольга Дзюбан
+                            </h3>
+                            <div class="content-text">
+                                <p>
+                                    Асоціація втілює у життя культурні, освітні, гуманітарні проєкти, залучаючи кошти
+                                    меценатів та фондів, спираючись на підтримку небайдужих людей, створюючи коло
+                                    однодумців.
+                                </p>
+                                <p>
+                                    Ми надихаємо на створення нових сучасних проєктів, які спрямовані на популяризацію та
+                                    розвиток української культури та мистецтва. Звітуємо перед членами та меценатами,
+                                    залучаємо нових партнерів, маємо великі плани.
+                                </p>
+                                <p>
+                                    За сутністю асоціація «Джерело» е організацією парасолькового типу.
+                                </p>
+                            </div>
+
+                            <div class="content-buttons">
+                                <a href="#" class="btn btn-lg btn-warning">Підримати</a>
+                                <a href="#" class="btn btn-lg btn-outline-warning text-warning bg-transparent">Звіти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /About us -->
+
+    <!-- Our projects -->
+
+    <section class="our-projects">
+        <div class="bubble bubble-yellow-full left-top"></div>
+        <div class="container">
+            <h2 class="text-center">Наші проекти</h2>
+            <div class="grid-items">
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="grid-item grid-item-middle">
+                            <div class="img-wrap">
+                                <img src="images/project1.png" alt="" />
+                            </div>
+                            <div class="img-wrap-text">
+                                <p>Українська школа та садочок “Нове покоління”</p>
+                            </div>
+                        </a>
+                        <a href="#" class="grid-item grid-item-small">
+                            <div class="img-wrap">
+                                <img src="images/project2.png" alt="" />
+                            </div>
+                            <div class="img-wrap-text">
+                                <p>Український сквер на горі Монжуїк</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="grid-item bg-yellow grid-item-small">
+                            <div class="img-wrap-text">
+                                <p>Гуманітарний Центр допомоги Україні</p>
+                            </div>
+                        </a>
+                        <a href="#" class="grid-item grid-item-middle">
+                            <div class="img-wrap">
+                                <img src="images/project3.png" alt="" />
+                            </div>
+                            <div class="img-wrap-text">
+                                <p>Українська бібліотека у Барселоні</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="grid-item grid-item-middle">
+                            <div class="img-wrap">
+                                <img src="images/project4.png" alt="" />
+                            </div>
+                            <div class="img-wrap-text">
+                                <p>Щорічний фестиваль української культури “Ucrania Fest”</p>
+                            </div>
+                        </a>
+                        <a href="#" class="grid-item bg-blue grid-item-small">
+                            <div class="img-wrap-text">
+                                <p>Український Центр у Барселоні</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a href="#" class="grid-item">
+                            <div class="img-wrap">
+                                <img src="images/project5.png" alt="" />
+                            </div>
+                            <div class="img-wrap-text">
+                                <p>Веб сайт допомоги українським біженцям HelpUA.esp</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-events">
+                <h3>Асоціація активно проводить такі заходи:</h3>
+                <div class="our-events-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Фестиваль «Вишиванка як код нації» (Людмила Скитенко, «Академія успіху»)</li>
+                                <li>Допомога учасникам (пораненим) подій на Майдані (Революція гідності)</li>
+                                <li>Матеріальна та грошова допомога воїнам АТО та ЗСУ, пораненим у війні, реабілітація в
+                                    Барселоні
+                                </li>
+                                <li>Матеріальна допомога дітям-сиротам у дитячих будинках в Україні</li>
+                                <li>Вечорниці</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Зустрічі з сучасними українськими письменниками та презентації їх творів</li>
+                                <li>Фотовиставки та виставки картин українських художників</li>
+                                <li>Юридичні семінари за участю висококваліфікованих спеціалістів</li>
+                                <li>Концерти відомих українських співаків та танцювальних колективів</li>
+                                <li>участь у місцевих фестивалях міста Барселони (Merce, Festival «Sopas del Mundo»</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-events-block">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-block bg-blue">
+                                <h2>Члени Асоціації можуть:</h2>
+                                <ul>
+                                    <li>Навчати дітей у школі «Нове покоління»</li>
+                                    <li>Займатися на мовних курсах, користуватися бібліотекою</li>
+                                    <li>Відвідувати освітні заходи</li>
+                                    <li>Брати участь та організовувати культурні, мистецьки події</li>
+                                    <li>Отримувати юридичні консультації та допомогу, а також консультації психолога</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="bg-block bg-yellow">
+                                <div class="content-text">
+                                    <p>
+                                        Щоб стати членом асоціації треба мати бажання, зв’язатись із нами, пройти невеличку співбесіду,
+                                        сплатити членські внески. Можна заповнити форму прямо тут на сайті, ми зв’яжемось з вами.
+                                    </p>
+                                    <p>
+                                        Ласкаво просимо до нашої великої сім’ї, зараз в асоціації понад 1000 членів.
+                                    </p>
+                                </div>
+                                <h4>Членський внесок 15 євро на рік. </h4>
+                                <a href="#" class="btn btn-lg btn-primary">Хочу бути членом Асоціації «Джерело»</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /Our projects -->
+    <section class="container">
+        <!-- Our partners -->
+        <div class="our-partners">
+            <h2 class="text-center">Ключові партнери</h2>
+
+            <div class="our-partners-inner">
+                <div class="row">
+                    <div class="col-6 col-md-3 our-partners-item bg-dark-yellow">
+                        <p>Генеральне Консульство України у Барселоні</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-blue">
+                        <p>Женералітат Каталонії</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-base">
+                        <p>Міська рада Барселони</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-yellow">
+                        <p>Фонд "Banc dels Aliments"</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-base">
+                        <p>Банк "La Caixa"</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-yellow">
+                        <p>Міжнародна освітня мережа "Planeta Formación y Universidades"</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-dark-blue">
+                        <p>Каталонська комісія з допомоги біженцям</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-blue">
+                        <p>Юридична компанія "AhlawPartners"</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-yellow">
+                        <p>Європейське молодіжне інформаційне та консультаційне агентство</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-base">
+                        <p>ПЛАСТ в Іспанії</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-blue">
+                        <p>Українські асоціації в Іспанії</p>
+                    </div>
+                    <div class="col-6 col-md-3 our-partners-item bg-base">
+                        <p>Iспанські громадські організації</p>
+                    </div>
+                </div>
+            </div>
+            <div class="our-partners-buttons text-center">
+                <a href="#" class="btn btn-transparent">Стати нашим партнером</a>
+                <a href="#" class="btn btn-transparent">Повний перелiк партнерiв</a>
+            </div>
+        </div>
+        <!-- /Our partners -->
+
+        <!-- News -->
+
+        <div class="news">
+            <h2 class="text-center">Новини</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="news-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="img-wrap">
+                                    <img src="images/news1.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h4>Арт-шоу «Вишиванка, як код нації»</h4>
+                                <div class="date">
+                                    04.04.2022
+                                </div>
+                                <div class="news-item-description">
+                                    «Вишиванка, як код нації» – святкове шоу української вишиванки, яке пройщло з великим розмахом
+                                </div>
+                                <a href="#">Детальнiше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="news-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="img-wrap">
+                                    <img src="images/news2.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h4>Благодійний концерт жертвам війни в Україні</h4>
+                                <div class="date">
+                                    04.04.2022
+                                </div>
+                                <div class="news-item-description">
+                                    28 березня 2022 року у церкві Santa Maria del Mar відбувся Благодійний концерт жертвам війни
+                                </div>
+                                <a href="#">Детальнiше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-buttons text-center">
+                <a href="#" class="btn btn-transparent">Дивитись ще</a>
+            </div>
+        </div>
+
+        <!-- /News -->
+
+        <!-- Our team -->
+        <div class="our-team">
+            <h2 class="text-center">Наша команда</h2>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="our-team-item">
+                        <div class="img-wrap">
+                            <img src="images/team1.png" alt="" />
+                        </div>
+                        <div class="our-team-item-title">Lorem ipsum</div>
+                        <div class="our-team-item-description">
+                            Lorem ipsum dolor sit amet, consectet
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="our-team-item">
+                        <div class="img-wrap">
+                            <img src="images/team2.png" alt="" />
+                        </div>
+                        <div class="our-team-item-title">Lorem ipsum</div>
+                        <div class="our-team-item-description">
+                            Lorem ipsum dolor sit amet, consectet
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="our-team-item">
+                        <div class="img-wrap">
+                            <img src="images/team3.png" alt="" />
+                        </div>
+                        <div class="our-team-item-title">Lorem ipsum</div>
+                        <div class="our-team-item-description">
+                            Lorem ipsum dolor sit amet, consectet
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="our-team-item">
+                        <div class="img-wrap">
+                            <img src="images/team4.png" alt="" />
+                        </div>
+                        <div class="our-team-item-title">Lorem ipsum</div>
+                        <div class="our-team-item-description">
+                            Lorem ipsum dolor sit amet, consectet
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Our team -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="contacts-block bg-blue">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Контакти</h2>
+                    <div class="col-md-6">
+                        <div class="contacts-block-description">
+                            Слідкуйте за сторінкою Асоціації у фейсбуці. Ми пишемо про події, які були і які плануємо,
+                            анонси, інформуємо про зміни у законодавстві, запрошуємо на курси, розповідаємо про цікаве.
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="icon">
+                                <svg viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 9.6002V14.4002H5.1V22.8002H9.9V14.4002H13.5L14.7 9.6002H9.9V7.2002C9.9 6.88194 10.0264 6.57671 10.2515 6.35167C10.4765 6.12662 10.7817 6.0002 11.1 6.0002H14.7V1.2002H11.1C9.5087 1.2002 7.98258 1.83234 6.85736 2.95755C5.73214 4.08277 5.1 5.6089 5.1 7.2002V9.6002H1.5Z"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon">
+                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4535_7008)">
+                                        <path d="M17.6769 1.64697H7.32393C4.46505 1.64697 2.14746 3.96456 2.14746 6.82344V17.1764C2.14746 20.0353 4.46505 22.3529 7.32393 22.3529H17.6769C20.5358 22.3529 22.8533 20.0353 22.8533 17.1764V6.82344C22.8533 3.96456 20.5358 1.64697 17.6769 1.64697Z"
+                                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M12.4995 15.8824C14.6437 15.8824 16.3819 14.1442 16.3819 12C16.3819 9.85586 14.6437 8.11768 12.4995 8.11768C10.3554 8.11768 8.61719 9.85586 8.61719 12C8.61719 14.1442 10.3554 15.8824 12.4995 15.8824Z"
+                                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M18.3232 6.17627V6.17727" stroke="currentColor" stroke-width="1.5"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4535_7008">
+                                            <rect width="24" height="24" fill="currentColor"
+                                                  transform="translate(0.5)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon">
+                                <svg viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.1002 8.5999L11.3002 13.3999L18.5002 20.5999L23.3002 1.3999L1.7002 9.7999L6.5002 12.1999L8.9002 19.3999L12.5002 14.5999"
+                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="icon">
+                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4535_7015)">
+                                        <path d="M18.6111 3H6.38889C3.68883 3 1.5 5.30254 1.5 8.14286V15.8571C1.5 18.6975 3.68883 21 6.38889 21H18.6111C21.3112 21 23.5 18.6975 23.5 15.8571V8.14286C23.5 5.30254 21.3112 3 18.6111 3Z"
+                                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                        <path d="M10.5 8L16.5 12L10.5 16V8Z" stroke="currentColor" stroke-width="1.5"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4535_7015">
+                                            <rect width="24" height="24" fill="currentColor"
+                                                  transform="translate(0.5)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="contacts-block-description">
+                            <p>
+                                Нас можна знайти за адресою Carrer de Béjar, 38
+                            </p>
+                            <p>
+                                автобус D40, V5, 27
+                            </p>
+                            <p>
+                                метро L5 Sants Estació або L3 Espanya
+                            </p>
+                        </div>
+                        <div class="contacts-block-description">
+                            Ласкаво просимо!
+                        </div>
+                        <div class="contacts">
+                            <a href="mailto:asociacion@djerelo.eu">
+                                <div class="icon">
+                                    <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9615 1H3.80769C2.53319 1 1.5 2.04467 1.5 3.33333V15C1.5 16.2887 2.53319 17.3333 3.80769 17.3333H19.9615C21.236 17.3333 22.2692 16.2887 22.2692 15V3.33333C22.2692 2.04467 21.236 1 19.9615 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1.5 3.33398L11.8846 10.334L22.2692 3.33398" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                asociacion@djerelo.eu
+                            </a>
+                            <a href="tel:+34641352251">
+                                <div class="icon">
+                                    <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.1972 1.14307H9.30644L11.8611 7.52962L8.66779 9.44559C10.0357 12.2193 12.2806 14.4642 15.0543 15.8321L16.9703 12.6389L23.3569 15.1935V20.3027C23.3569 20.9803 23.0877 21.63 22.6086 22.1091C22.1295 22.5882 21.4798 22.8574 20.8022 22.8574C15.8198 22.5546 11.1204 20.4388 7.5908 16.9091C4.06117 13.3795 1.94536 8.68014 1.64258 3.69769C1.64258 3.02016 1.91172 2.37038 2.39081 1.8913C2.86989 1.41221 3.51967 1.14307 4.1972 1.14307"
+                                              stroke="currentColor" stroke-width="1.5"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                +34 641 35 22 51
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-wrap map">
+                            <img src="images/map.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-4">
+                        <div class="logo">
+                            <a href="#">
+                                <div class="logo-dark">
+                                    <img src="images/logo.svg" alt="" />
+                                </div>
+                                <div class="logo-white">
+                                    <img src="images/logo-white-theme.svg" alt="" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="copyright">
+                            © Djerelo.eu. 2022 Усі права захищено.
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-8">
+                        <div class="footer-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Наші партнери</a>
+                                </li>
+                                <li>
+                                    <a href="#">Звіти</a>
+                                </li>
+                                <li>
+                                    <a href="#">Новини</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакти</a>
+                                </li>
+                                <li>
+                                    <a href="#">Український центр у Барселоні </a>
+                                </li>
+                                <li>
+                                    <a href="#">Школа та садочок</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гуманітарний центр</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бібліотека</a>
+                                </li>
+                                <li>
+                                    <a href="#">Український сад </a>
+                                </li>
+                                <li>
+                                    <a href="#">Фестиваль</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вебсайт допомоги біженцям з України</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-authors">
+                            <div class="footer-authors-item">
+                                <span>Розробка</span>
+                                <a href="#">Colin Drury</a>
+                            </div>
+                            <div class="footer-authors-item">
+                                <span>Дизайн</span>
+                                <a href="#">Clickable agenсy</a>
+                            </div>
+                            <div class="footer-authors-item">
+                                <span>Маркетинг, Google Grants</span>
+                                <a href="#">Inweb.ua</a>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            © Djerelo.eu. 2022 Усі права захищено.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+</main>
+
+</body>
+</html>

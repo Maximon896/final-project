@@ -1,0 +1,14 @@
+
+@media (prefers-color-scheme: dark) {
+    .header, .footer {
+        .logo {
+            &-dark {
+                display: block;
+            }
+
+            &-white {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+h1, .h1 {
+    font-size: 38px; // mobile version
+
+    @include responsive(md) {
+        font-size: 65px; // desktop version
+    }
+}
+
+h2, .h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+    @include responsive(md) {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+}
+
+h3, .h3 {
+    font-size: 24px;
+    font-weight: 700;
+
+    @include responsive(md) {
+        font-size: 30px;
+    }
+}
+
+h4, .h4 {
+    font-size: 20px;
+
+    @include responsive(md) {
+        font-size: 24px;
+    }
+}
+
+h5, .h5 {
+    font-size: 16px;
+
+    @include responsive(md) {
+        font-size: 24px;
+    }
+}

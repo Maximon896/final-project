@@ -1,0 +1,47 @@
+.btn {
+    --bs-btn-border-radius: 58px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    min-width: 275px;
+    font-size: 18px;
+
+    &-lg {
+        min-height: 54px;
+        min-width: 350px;
+        font-size: 20px;
+
+        @include responsive(md) {
+            min-height: 58px;
+            font-size: 24px;
+        }
+    }
+
+    &-primary {
+        background: var(--blue-color);
+    }
+
+    &-warning {
+        background: var(--yellow-color);
+    }
+
+    &-transparent {
+        border: 1px solid var(--text-color);
+        color: var(--text-color);
+
+        &:hover {
+            border: 1px solid var(--text-color);
+            background: var(--text-color);
+            color: var(--base-color);
+        }
+
+        @include responsive(md, max) {
+            flex: 1;
+            font-size: 20px;
+            min-height: 53px;
+
+        }
+    }
+}
